@@ -1,0 +1,45 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#wrapper {
+    border: solid 1px #000;
+    min-height: 400px;
+    width: 960px;
+    margin: 0 auto;
+}
+
+h1 {
+    background-image: url(../images/logo2.png);
+    background-position: 20px;
+    height: 220px;
+    text-indent: -200px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-color: #ddd;
+    padding: 5px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+ul li a {
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #999;
+    text-decoration: underline;
+}
