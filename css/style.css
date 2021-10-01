@@ -43,3 +43,22 @@ ul li a:hover {
     color: #999;
     text-decoration: underline;
 }
+
+#destaque figure {
+    margin: 0;
+}
+
+#produtosList {
+    display: grid;
+    /* DIVIDE A GRID POR FRAÇÕES */
+    grid-template-columns: 1fr 2fr;
+    /* DETERMINA ESPAÇO NAS COLUNAS AO LADO */
+    column-gap: 10px;
+    padding: 10px;
+    /* DETERMINA ESPAÇO NAS COLUNAS EMBAIXO E ENCIMA */
+    row-gap: 10px;
+}
+
+#produtosList .cardProdutos {
+    border: 1px solid #ddd;
+}
