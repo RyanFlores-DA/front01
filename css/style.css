@@ -13,7 +13,7 @@ h1 {
     background-image: url(../images/logo2.png);
     background-position: 20px;
     height: 220px;
-    text-indent: -200px;
+    text-indent: 20px;
     overflow: hidden;
     background-repeat: no-repeat;
 }
@@ -48,17 +48,29 @@ ul li a:hover {
     margin: 0;
 }
 
+h2 {
+    text-indent: 10px;
+}
+
 #produtosList {
     display: grid;
     /* DIVIDE A GRID POR FRAÇÕES */
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 2fr;
     /* DETERMINA ESPAÇO NAS COLUNAS AO LADO */
     column-gap: 10px;
     padding: 10px;
-    /* DETERMINA ESPAÇO NAS COLUNAS EMBAIXO E ENCIMA */
+    /* DETERMINA ESPAÇO NAS COLUNAS ENCIMA E EMBAIXO*/
     row-gap: 10px;
 }
 
 #produtosList .cardProdutos {
-    border: 1px solid #ddd;
+    border-radius: 5px solid #ddd;
+    padding: 10px;
+    box-shadow: 3px -2px 20px -2px #ccc;
+}
+
+.cardProdutos p {
+    display: inline-block;
+    width: 300px;
+    margin: 0 0 0 10px;
 }
