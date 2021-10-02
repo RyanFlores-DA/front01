@@ -50,6 +50,7 @@ ul li a:hover {
 
 h2 {
     text-indent: 10px;
+    color: #333;
 }
 
 #produtosList {
@@ -73,4 +74,88 @@ h2 {
     display: inline-block;
     width: 300px;
     margin: 0 0 0 10px;
+}
+
+#produtosList .cardProdutos:hover {
+    box-shadow: 3px -5px 40px -2px #ddd;
+}
+
+#contatos h2 {
+    grid-area: h2;
+}
+
+#contatos form {
+    grid-area: formulario;
+    padding: 10px;
+}
+
+#contatos form input,
+#contatos form textarea {
+    display: block;
+    width: 100%;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+#contatos form input[type='submit'] {
+    width: inherit;
+    background-color: #ddd;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    margin: 5px;
+}
+
+#contatos div {
+    grid-area: emderecoTelefone;
+}
+
+#contatos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'h2 h2' 'formulario enderecoTelefone';
+    grid-gap: 10px;
+}
+
+#contatos h3 {
+    font-size: 14px;
+    color: #333;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li a {
+    display: block;
+    border-radius: 50%;
+    width: 39px;
+    height: 39px;
+    background-color: #f00;
+    background-image: url('../images/socialSprits.png');
+}
+
+footer ul li:nth-child(2) a {
+    background-position-x: -156px;
+}
+
+footer ul li:nth-child(3) a {
+    background-position-x: 120px;
+}
+
+footer ul li a:hover {
+    background-position-y: 39px;
 }
