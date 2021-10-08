@@ -1,34 +1,33 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: verdana, arial, helvetica, sans-serif;
 }
 
 #wrapper {
-    border: solid 1px #000;
     min-height: 400px;
     width: 960px;
     margin: 0 auto;
 }
 
 h1 {
-    background-image: url(../images/logo2.png);
+    background-image: url("../images/logo2.png");
+    background-repeat: no-repeat;
     background-position: 20px;
     height: 220px;
-    text-indent: 20px;
+    text-indent: -200px;
     overflow: hidden;
-    background-repeat: no-repeat;
 }
 
 nav {
-    background-color: #ddd;
-    padding: 5px 0;
+    background-color: #DDD;
+    padding: 5px 0
 }
 
-ul {
+nav ul {
     list-style: none;
     padding: 0;
 }
 
-ul li {
+nav ul li {
     display: inline-block;
     margin-left: 10px;
 }
@@ -55,29 +54,22 @@ h2 {
 
 #produtosList {
     display: grid;
-    /* DIVIDE A GRID POR FRAÇÕES */
-    grid-template-columns: 2fr 2fr;
-    /* DETERMINA ESPAÇO NAS COLUNAS AO LADO */
-    column-gap: 10px;
     padding: 10px;
-    /* DETERMINA ESPAÇO NAS COLUNAS ENCIMA E EMBAIXO*/
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
     row-gap: 10px;
 }
 
 #produtosList .cardProdutos {
-    border-radius: 5px solid #ddd;
+    border-radius: 5px;
     padding: 10px;
-    box-shadow: 3px -2px 20px -2px #ccc;
+    box-shadow: 0px 0px 3px 1px #DDD;
 }
 
 .cardProdutos p {
     display: inline-block;
     width: 300px;
     margin: 0 0 0 10px;
-}
-
-#produtosList .cardProdutos:hover {
-    box-shadow: 3px -5px 40px -2px #ddd;
 }
 
 #contatos h2 {
@@ -87,6 +79,7 @@ h2 {
 #contatos form {
     grid-area: formulario;
     padding: 10px;
+    text-align: right;
 }
 
 #contatos form input,
@@ -94,26 +87,26 @@ h2 {
     display: block;
     width: 100%;
     margin: 5px;
-    border-radius: 8px;
+    border-radius: 5px;
+    line-height: 20px;
 }
 
-#contatos form input[type='submit'] {
+#contatos form input[type="submit"] {
+    display: inline;
     width: inherit;
-    background-color: #ddd;
-    border-radius: 5px;
-    width: 100px;
-    height: 30px;
-    margin: 5px;
+    background-color: blue;
+    border: none;
+    color: #fff;
 }
 
 #contatos div {
-    grid-area: emderecoTelefone;
+    grid-area: enderecoTelefones;
 }
 
 #contatos {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 'h2 h2' 'formulario enderecoTelefone';
+    grid-template-areas: 'h2 h2' 'formulario enderecoTelefones';
     grid-gap: 10px;
 }
 
@@ -140,11 +133,12 @@ footer ul li {
 }
 
 footer ul li a {
-    display: block;
+    border: 1px solid #ccc;
     border-radius: 50%;
+    display: block;
     width: 39px;
     height: 39px;
-    background-color: #f00;
+    background-color: #F00;
     background-image: url('../images/socialSprits.png');
 }
 
@@ -153,9 +147,9 @@ footer ul li:nth-child(2) a {
 }
 
 footer ul li:nth-child(3) a {
-    background-position-x: 120px;
+    background-position-x: 119px;
 }
 
 footer ul li a:hover {
-    background-position-y: 39px;
+    background-position-y: -39px;
 }
